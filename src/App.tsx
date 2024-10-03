@@ -1,24 +1,27 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import CategoriesNavbar from './components/Catagories';
+import Carousel from './components/Carousal';
+import Topcategories from './components/Topcategories';
+import PopularProducts from './components/PopularProducts';
+import MoreOfferPage from './components/moreOfferpage';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen flex flex-col">
+      
+      <Navbar />
+      <CategoriesNavbar  />
+
+      <Carousel />
+      <Topcategories />
+      <PopularProducts />
+      <MoreOfferPage/>
+
+      <Footer/>
     </div>
   );
 }
